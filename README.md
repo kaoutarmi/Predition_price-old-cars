@@ -1,40 +1,51 @@
-# Car Price Prediction
-Ce projet consiste à prédire le prix des voitures en utilisant un modèle d'apprentissage automatique basé sur un Decision Tree Regressor. Les données utilisées proviennent du fichier avito_car_dataset_ALL.csv, qui contient des informations détaillées sur les voitures, telles que leur marque, modèle, kilométrage, type de carburant, boîte de vitesses, et bien plus.
-## Objectifs
-Préparer les données de manière à les rendre adaptées au modèle de régression.
-Utiliser un modèle de régression pour prédire les prix des voitures.
-Évaluer les performances du modèle avec des métriques standard.
-## Données
+# 🚗 Car Price Prediction
 
-Fichier source : avito_car_dataset_ALL.csv.
-Le dataset contient des colonnes comme :
-   Marque
-   Modèle
-   Kilométrage
-   Type de carburant
-   Boîte de vitesses
-   Prix (cible à prédire)
-## Prétraitement des Données
-Les étapes suivantes ont été réalisées pour préparer les données :
+Welcome to the **Car Price Prediction** project! 🎉 The goal of this project is to predict car prices using a **Decision Tree Regressor** machine learning model. The dataset used comes from the file `avito_car_dataset_ALL.csv`, which contains detailed information about cars, such as **brand**, **model**, **mileage**, **fuel type**, **transmission**, and more.
 
-1-Conversion des colonnes non numériques en type catégoriel.
-2-Suppression des colonnes non pertinentes comme Lien.
-3-Imputation des valeurs manquantes :
-  Médiane pour les colonnes numériques.
-  Mode pour les colonnes catégorielles.
-4-Encodage One-Hot pour les colonnes catégorielles (Ville, Origine, etc.).
-5-Fusion des colonnes Marque et Modèle en une seule : Marque_Modele.
-6-Séparation des données en features et target (Prix).
-## Modèle
-Algorithme utilisé : Decision Tree Regressor.
-Bibliothèque : scikit-learn.
+## 🎯 Objectives
 
-## Dépendances
-Pour exécuter ce projet, vous aurez besoin des bibliothèques suivantes :
+- 🧹 **Prepare the data** for regression model compatibility.
+- 🔮 **Train a regression model** to predict car prices.
+- 📊 **Evaluate model performance** using standard metrics like Mean Absolute Error (MAE), R-squared, etc.
 
-### pandas
-### numpy
-### scikit-learn
-Installez les dépendances avec la commande suivante :
+## 📊 Data
 
-    pip install pandas numpy scikit-learn
+- **Source file:** `avito_car_dataset_ALL.csv`
+- The dataset includes the following columns:
+  - **Brand** 🏷️
+  - **Model** 🚗
+  - **Mileage** ⏳
+  - **Fuel type** ⛽
+  - **Transmission type** 🔧
+  - **Price** (target to predict) 💵
+
+## 🧹 Data Preprocessing
+
+The following preprocessing steps were performed to prepare the data:
+
+1. 🔄 **Convert non-numeric columns** to categorical types.
+2. ❌ **Remove irrelevant columns**, such as the "Link" column.
+3. 🔢 **Impute missing values**:
+   - Use **median** for numeric columns.
+   - Use **mode** for categorical columns.
+4. 🔠 **One-Hot Encoding** for categorical columns (e.g., **City**, **Origin**, etc.).
+5. 🧩 **Combine the Brand and Model columns** into a single column: `Brand_Model`.
+6. 🎯 **Split the data** into features (X) and target (Price).
+
+## 🤖 Model
+
+- **Algorithm used:** **Decision Tree Regressor** 🌳
+- **Library used:** `scikit-learn` 🧑‍💻
+
+## 📦 Dependencies
+
+To run this project, you will need the following libraries:
+
+- `pandas` 📑
+- `numpy` 🔢
+- `scikit-learn` 🛠️
+
+You can install the dependencies by running:
+
+ ```bash
+pip install pandas numpy scikit-learn
